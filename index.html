@@ -27,9 +27,8 @@
             <div
                 class="max-w-7xl mx-auto flex flex-col space-y-4 md:space-y-0 md:flex-row items-center w-full justify-between p-4">
                 <div>
-                    <button class="text-black font-semibold bg-[#B4F461] py-2 px-6 rounded-md">
+                    <button id="blog-btn" class="text-black font-semibold bg-[#B4F461] py-2 px-6 rounded-md">
                         <span id="blog">Blog</span>
-                        <span id="home">Home</span>
                     </button>
                 </div>
                 <div class="flex gap-2 items-center">
@@ -45,18 +44,18 @@
         </div>
 
         <div class="flex justify-center space-x-6 py-6 md:pt-10 md:pb-8  bg-opacity-30 backdrop-blur-md">
-            <button id="donate-btn" class="text-black font-semibold bg-[#B4F461] py-3 px-8 rounded-md">
+            <button id="donate-btn" class="font-semibold py-3 px-8 rounded-md text-black bg-[#B4F461]">
                 Donate
             </button>
             <button id="history-btn"
-                class="font-semibold text-gray-600 border-2 solid border-gray-300 py-3 px-8 rounded-md bg-white">
+                class="font-semibold py-3 px-8 rounded-md text-gray-600 border-2 solid border-gray-300  bg-white">
                 History
             </button>
         </div>
     </header>
     <main class="bg-white mx-auto">
         <div class="mb-20">
-            <div class="max-w-7xl mx-auto space-y-6">
+            <div id="donate-cards" class="max-w-7xl mx-auto space-y-6">
                 <!-- first card  -->
                 <div class="p-6 flex flex-col gap-6 lg:flex-row border-2 solid rounded-xl  border-gray-300">
                     <div>
@@ -216,6 +215,8 @@
     </footer>
     <script src="./JS/Utlities.js"></script>
     <script src="./JS/index.js"></script>
+    <script src="./JS/blog.js"></script>
+
 </body>
 
 </html>
