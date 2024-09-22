@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+        .font-family {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="font-family bg-white">
+    <!-- Header section  -->
+    <header class=" mx-auto sticky top-0">
+        <div class="bg-[#f6f1e9]  pb-10">
+            <div
+                class="max-w-7xl mx-auto flex flex-col space-y-4 md:space-y-0 md:flex-row items-center w-full justify-between p-4 pb-0 md:pb-6">
+                <div>
+                    <button class="text-black font-semibold bg-[#B4F461] py-2 px-6 rounded-md">
+                        <span id="blog">Blog</span>
+                        <span id="home">Home</span>
+                    </button>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <img class="h-12" src="assets/logo.png" alt="">
+                    <h1 class="text-lg font-semibold">Donate Bangladesh</h1>
+                </div>
+                <div class="flex gap-2">
+                    <img class="h-8" src="assets/coin.png" alt="">
+                    <h1 class="flex items-center text-[#111111B3]"><span id="innitial-money">5500 </span> &nbsp; BDT
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center space-x-6 py-6 md:pt-16 md:pb-10  bg-opacity-30 backdrop-blur-md">
+            <button id="donate-btn" class="text-black font-semibold bg-[#B4F461] py-3 px-8 rounded-md">
+                Donate
+            </button>
+            <button id="history-btn"
+                class="font-semibold text-gray-600 border-2 solid border-gray-300 py-3 px-8 rounded-md bg-white">
+                History
+            </button>
+        </div>
+    </header>
+    <main class="bg-white mx-auto">
+        <div class="mb-20">
+            <div class="max-w-7xl mx-auto space-y-6">
+                <!-- first card  -->
+                <div class="p-6 flex flex-col gap-6 lg:flex-row border-2 solid rounded-xl space-y-4 border-gray-300">
+                    <div>
+                        <img src="assets/noakhali.png" alt="">
+                    </div>
+                    <div class="lg:max-w-[55%] space-y-4 flex flex-col justify-between">
+                        <div class=" space-y-4 ">
+                            <div class="flex gap-2 bg-gray-200 py-2 px-4 max-w-40 rounded-lg">
+                                <img class="h-8" src="assets/coin.png" alt="">
+                                <h1 class="flex items-center text-[#111111B3]"><span id="innitial-money">00
+                                    </span>&nbsp;
+                                    BDT
+                                </h1>
+                            </div>
+                            <div class="space-y-4 ">
+                                <h1 class="text-xl font-semibold text-black">Donate for Flood at Noakhali, Bangladesh
+                                </h1>
+                                <p> The residences and infrastructure in Noakhali have suffered serious damage as a
+                                    result
+                                    of the recent floods. Your contribution will assist in helping individuals impacted
+                                    by
+                                    this calamity by providing necessary necessities. No matter how big or small, every
+                                    contribution counts. Please help us by contributing to the relief efforts and
+                                    improving
+                                    the lives of people who are less fortunate.</p>
+
+                            </div>
+                        </div>
+                        <div class="space-y-4 flex flex-col justify-end">
+                            <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full" />
+                            <button id="donate-btn"
+                                class="text-black font-semibold w-full bg-[#B4F461] py-3 px-8 rounded-md">
+                                Donate
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- second card  -->
+                <div class="p-6 flex flex-col gap-6 lg:flex-row border-2 solid rounded-xl space-y-4 border-gray-300">
+                    <div class="h-full">
+                        <img class="h-full" src="assets/feni.png" alt="">
+                    </div>
+                    <div class="lg:max-w-[55%] space-y-4 flex flex-col justify-between">
+                        <div class=" space-y-4 ">
+                            <div class="flex gap-2 bg-gray-200 py-2 px-4 max-w-40 rounded-lg">
+                                <img class="h-8" src="assets/coin.png" alt="">
+                                <h1 class="flex items-center text-[#111111B3]"><span id="innitial-money">00
+                                    </span>&nbsp;
+                                    BDT
+                                </h1>
+                            </div>
+                            <div class="space-y-4 ">
+                                <h1 class="text-xl font-semibold text-black">Donate for Flood Relief in Feni,Bangladesh
+                                </h1>
+                                <p> Local communities in Feni have been severely disrupted and have suffered significant
+                                    losses due to the recent floods. Your kind contribution will assist in providing
+                                    individuals affected by this disaster with emergency relief, such as food, clean
+                                    water,
+                                    and medical supplies. In the wake of this tragedy, we can provide vital support and
+                                    aid
+                                    in the reconstruction of lives by working together. Every effort counts toward
+                                    creating
+                                    a significant impact. To help individuals in immediate need, kindly think about
+                                    making a
+                                    donation today. </p>
+
+                            </div>
+                        </div>
+                        <div class="space-y-4 flex flex-col justify-end">
+                            <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full" />
+                            <button id="donate-btn"
+                                class="text-black font-semibold w-full bg-[#B4F461] py-3 px-8 rounded-md">
+                                Donate
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- third card  -->
+                <div class="p-6 flex flex-col gap-6 lg:flex-row border-2 solid rounded-xl space-y-4 border-gray-300">
+                    <div>
+                        <img src="assets/quota-protest.png" alt="">
+                    </div>
+                    <div class="lg:max-w-[55%] space-y-4 flex flex-col justify-between">
+                        <div class=" space-y-4 ">
+                            <div class="flex gap-2 bg-gray-200 py-2 px-4 max-w-40 rounded-lg">
+                                <img class="h-8" src="assets/coin.png" alt="">
+                                <h1 class="flex items-center text-[#111111B3]"><span id="innitial-money">00
+                                    </span>&nbsp;
+                                    BDT
+                                </h1>
+                            </div>
+                            <div class="space-y-4 ">
+                                <h1 class="text-xl font-semibold text-black">Aid for Injured in the Quota Movement</h1>
+                                <p> Many people have suffered serious injuries and great hardships as a result of the
+                                    recent
+                                    Quota movement. In order to provide individuals affected with medical attention,
+                                    rehabilitation, and essential supplies, your contribution is essential. By making a
+                                    donation, you ensure that those who have been hurt get the attention and assistance
+                                    they
+                                    require at this trying time. Each and every donation is essential to easing their
+                                    pain
+                                    and promoting their healing. Kindly think about contributing to help these
+                                    courageous
+                                    people in their hour of need.</p>
+
+                            </div>
+                        </div>
+                        <div class="space-y-4 flex flex-col justify-end">
+                            <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full" />
+                            <button id="donate-btn"
+                                class="text-black font-semibold w-full bg-[#B4F461] py-3 px-8 rounded-md">
+                                Donate
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="history-card" class="hidden max-w-6xl mx-auto  bg-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corrupti possimus harum eos soluta
+                recusandae
+                repellendus, perspiciatis magnam eaque deserunt ad! Temporibus error, veniam ratione dolorem est,
+                numquam
+                nam mollitia obcaecati saepe nihil, quas corrupti accusantium voluptas. Minus eligendi laborum
+                voluptatibus
+                quos amet rem vero consectetur ducimus, harum nesciunt temporibus tempore architecto possimus
+                repellendus
+                deserunt eaque expedita dolor exercitationem. Optio harum necessitatibus cum recusandae velit commodi
+                temporibus ut ratione voluptate repellendus mollitia, facilis illum vel expedita nulla odit impedit
+                architecto culpa laboriosam officiis, error quae quas eius neque? Nemo praesentium beatae provident.
+                Adipisci, mollitia fugit? Molestiae pariatur facere adipisci architecto itaque voluptates error aliquam
+                perspiciatis repellendus non suscipit nihil, nesciunt fuga asperiores, maxime quos sunt, consectetur
+                eveniet
+                porro laudantium! Repellendus sint illo, esse aperiam itaque amet necessitatibus animi magni
+                perferendis,
+                quae nihil voluptate, ducimus culpa sit at? Asperiores sunt molestias, dolorem error alias optio
+                assumenda
+                dolore natus nesciunt delectus magni velit vel praesentium atque ipsa dolor nisi voluptatem qui aliquam
+                at?
+                Labore culpa veritatis facere quaerat dolores, quam atque maxime est eius incidunt reiciendis illo. Ipsa
+                quisquam, eligendi cupiditate aperiam obcaecati voluptas! Maxime dolorem hic fugit voluptas error dolor
+                ullam perspiciatis, distinctio ex, officiis rerum aperiam. Quam cupiditate eum enim.
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="bg-[#f6f1e9] h-32">
+
+    </footer>
+</body>
+
+</html>
