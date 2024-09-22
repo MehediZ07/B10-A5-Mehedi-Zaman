@@ -25,7 +25,7 @@
     <header class=" mx-auto sticky top-0">
         <div class="bg-[#f6f1e9]  pb-10">
             <div
-                class="max-w-7xl mx-auto flex flex-col space-y-4 md:space-y-0 md:flex-row items-center w-full justify-between p-4 pb-0 md:pb-6">
+                class="max-w-7xl mx-auto flex flex-col space-y-4 md:space-y-0 md:flex-row items-center w-full justify-between p-4">
                 <div>
                     <button class="text-black font-semibold bg-[#B4F461] py-2 px-6 rounded-md">
                         <span id="blog">Blog</span>
@@ -38,13 +38,13 @@
                 </div>
                 <div class="flex gap-2">
                     <img class="h-8" src="assets/coin.png" alt="">
-                    <h1 class="flex items-center text-[#111111B3]"><span id="innitial-money">5500 </span> &nbsp; BDT
+                    <h1 class="flex items-center text-[#111111B3]"><span id="innitial-money">5500</span> &nbsp; BDT
                     </h1>
                 </div>
             </div>
         </div>
 
-        <div class="flex justify-center space-x-6 py-6 md:pt-16 md:pb-10  bg-opacity-30 backdrop-blur-md">
+        <div class="flex justify-center space-x-6 py-6 md:pt-10 md:pb-8  bg-opacity-30 backdrop-blur-md">
             <button id="donate-btn" class="text-black font-semibold bg-[#B4F461] py-3 px-8 rounded-md">
                 Donate
             </button>
@@ -58,7 +58,7 @@
         <div class="mb-20">
             <div class="max-w-7xl mx-auto space-y-6">
                 <!-- first card  -->
-                <div class="p-6 flex flex-col gap-6 lg:flex-row border-2 solid rounded-xl space-y-4 border-gray-300">
+                <div class="p-6 flex flex-col gap-6 lg:flex-row border-2 solid rounded-xl  border-gray-300">
                     <div>
                         <img src="assets/noakhali.png" alt="">
                     </div>
@@ -66,7 +66,7 @@
                         <div class=" space-y-4 ">
                             <div class="flex gap-2 bg-gray-200 py-2 px-4 max-w-40 rounded-lg">
                                 <img class="h-8" src="assets/coin.png" alt="">
-                                <h1 class="flex items-center text-[#111111B3]"><span id="innitial-money">00
+                                <h1 class="flex items-center text-[#111111B3]"><span id="donate-nowakhali">00
                                     </span>&nbsp;
                                     BDT
                                 </h1>
@@ -86,8 +86,9 @@
                             </div>
                         </div>
                         <div class="space-y-4 flex flex-col justify-end">
-                            <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full" />
-                            <button id="donate-btn"
+                            <input id="donate-nowakhali-amount" type="text" placeholder="Write Donate Amount"
+                                class="input input-bordered w-full" />
+                            <button id="donet-nowakhali-btn"
                                 class="text-black font-semibold w-full bg-[#B4F461] py-3 px-8 rounded-md">
                                 Donate
                             </button>
@@ -97,7 +98,7 @@
                     </div>
                 </div>
                 <!-- second card  -->
-                <div class="p-6 flex flex-col gap-6 lg:flex-row border-2 solid rounded-xl space-y-4 border-gray-300">
+                <div class="p-6 flex flex-col gap-6 lg:flex-row border-2 solid rounded-xl  border-gray-300">
                     <div class="h-full">
                         <img class="h-full" src="assets/feni.png" alt="">
                     </div>
@@ -105,7 +106,7 @@
                         <div class=" space-y-4 ">
                             <div class="flex gap-2 bg-gray-200 py-2 px-4 max-w-40 rounded-lg">
                                 <img class="h-8" src="assets/coin.png" alt="">
-                                <h1 class="flex items-center text-[#111111B3]"><span id="innitial-money">00
+                                <h1 class="flex items-center text-[#111111B3]"><span id="donate-feni">00
                                     </span>&nbsp;
                                     BDT
                                 </h1>
@@ -128,8 +129,9 @@
                             </div>
                         </div>
                         <div class="space-y-4 flex flex-col justify-end">
-                            <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full" />
-                            <button id="donate-btn"
+                            <input id="donate-feni-amount" type="text" placeholder="Write Donate Amount"
+                                class="input input-bordered w-full" />
+                            <button id="donet-feni-btn"
                                 class="text-black font-semibold w-full bg-[#B4F461] py-3 px-8 rounded-md">
                                 Donate
                             </button>
@@ -139,15 +141,15 @@
                     </div>
                 </div>
                 <!-- third card  -->
-                <div class="p-6 flex flex-col gap-6 lg:flex-row border-2 solid rounded-xl space-y-4 border-gray-300">
+                <div class="p-6 flex flex-col gap-6 lg:flex-row border-2 solid rounded-xl  border-gray-300">
                     <div>
                         <img src="assets/quota-protest.png" alt="">
                     </div>
-                    <div class="lg:max-w-[55%] space-y-4 flex flex-col justify-between">
+                    <div class="lg:max-w-[55%]  space-y-4 flex flex-col justify-between">
                         <div class=" space-y-4 ">
                             <div class="flex gap-2 bg-gray-200 py-2 px-4 max-w-40 rounded-lg">
                                 <img class="h-8" src="assets/coin.png" alt="">
-                                <h1 class="flex items-center text-[#111111B3]"><span id="innitial-money">00
+                                <h1 class="flex items-center text-[#111111B3]"><span id="donate-quta">00
                                     </span>&nbsp;
                                     BDT
                                 </h1>
@@ -169,8 +171,9 @@
                             </div>
                         </div>
                         <div class="space-y-4 flex flex-col justify-end">
-                            <input type="text" placeholder="Write Donate Amount" class="input input-bordered w-full" />
-                            <button id="donate-btn"
+                            <input id="donate-quta-amount" type="text" placeholder="Write Donate Amount"
+                                class="input input-bordered w-full" />
+                            <button id="donet-quta-btn"
                                 class="text-black font-semibold w-full bg-[#B4F461] py-3 px-8 rounded-md">
                                 Donate
                             </button>
@@ -208,7 +211,7 @@
             </div>
         </div>
     </main>
-    <footer id="footer" class="bg-[#f6f1e9] h-32">
+    <footer id="footer" class="bg-[#f6f1e9] h-32 hidden">
 
     </footer>
     <script src="./JS/Utlities.js"></script>
