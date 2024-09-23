@@ -14,6 +14,13 @@
         .font-family {
             font-family: "Lexend", sans-serif;
         }
+
+
+
+        /* #question-mark {
+            animation: bounce 1s infinite;
+      
+        } */
     </style>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -44,32 +51,53 @@
     </header>
     <main>
         <div class="max-w-7xl mx-auto px-4 lg:0">
-            <h1 class="text-3xl font-semibold text-black my-12">Important FAQ <i
-                    class="fa-regular fa-circle-question rotate-12"></i>
+            <h1 class="text-3xl font-semibold text-black my-12">Important FAQ <i id="question-mark"
+                    class="fa-regular fa-circle-question  animate-bounce rotate-12"></i>
+
             </h1>
 
             <div class="join join-vertical w-full">
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                     <input type="radio" name="my-accordion-4" checked="checked" />
-                    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
                     <div class="collapse-content">
-                        <p>hello</p>
+                        <p>Web documents have a programming interface called the Document Object Model (DOM). Programs
+                            can dynamically alter the content, structure, and style of a document (such as HTML or XML)
+                            by using this representation of a document's structure as a tree of objects.</p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                     <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
                     <div class="collapse-content">
-                        <p>hello</p>
+                        <p>There are multiple ways to choose an element in JavaScript from the Document Object Model
+                            (DOM). These are a few of the most typical ones: By ID, By Class Name, By Tag Name, By CSS
+                            Selector.</p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                     <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div class="collapse-title text-xl font-medium">What is the event delegation in the context of the
+                        DOM, and why it is useful?</div>
                     <div class="collapse-content">
-                        <p>hello</p>
+                        <p>Instead of attaching separate event listeners to each child element in the DOM, event
+                            delegation involves attaching a single event listener to a parent element. You can handle
+                            events more effectively since this parent element listens for events that emanate from its
+                            children.</p>
                     </div>
                 </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and
+                        styles using the DOM?</div>
+                    <div class="collapse-content">
+                        <p>You can manipulate an element's attributes and styles using various properties and methods
+                            provided by the DOM. like: Get an Attribute, Set an Attribute, Remove an Attribute, Direct
+                            Property Access, Inline Styles, Inline Styles, Remove a Style, Change an Image Source,
+                            Update a Button's Text Color</p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
