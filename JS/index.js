@@ -88,7 +88,7 @@ document
     }
 
     const isNumber = inputValue.value.trim() !== "" && !isNaN(inputValue.value);
-    if (!isNumber || donQutaAmount <= 0) {
+    if (!isNumber || donNkhAmount <= 0) {
       alert("Invalid input");
       inputValue.value = "";
       return;
@@ -145,7 +145,7 @@ document
     }
 
     const isNumber = inputValue.value.trim() !== "" && !isNaN(inputValue.value);
-    if (!isNumber || donQutaAmount <= 0) {
+    if (!isNumber || donFniAmount <= 0) {
       alert("Invalid input");
       inputValue.value = "";
       return;
