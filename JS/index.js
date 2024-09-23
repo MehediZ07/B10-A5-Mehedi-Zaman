@@ -1,3 +1,8 @@
+// For blog button
+document.getElementById("blog-btn").addEventListener("click", function () {
+  window.location.href = "../B10-A5-Mehedi-Zaman/Sub-pages/blog.html";
+});
+
 // For home button
 document.getElementById("history-btn").addEventListener("click", function () {
   getElementsById("history-card").classList.remove("hidden");
@@ -26,11 +31,6 @@ document.getElementById("history-btn").addEventListener("click", function () {
       "border-gray-300",
       "bg-white"
     );
-});
-
-// For blog button
-document.getElementById("blog-btn").addEventListener("click", function () {
-  window.location.href = "../Sub-pages/blog.html";
 });
 
 document.getElementById("donate-btn").addEventListener("click", function () {
@@ -88,7 +88,7 @@ document
     }
 
     const isNumber = inputValue.value.trim() !== "" && !isNaN(inputValue.value);
-    if (!isNumber) {
+    if (!isNumber || donQutaAmount <= 0) {
       alert("Invalid input");
       inputValue.value = "";
       return;
@@ -100,6 +100,23 @@ document
     document.getElementById("donate-nowakhali").innerText = newAmount;
     inputValue.value = "";
 
+    // history added
+    const historyCard = document.createElement("div");
+    historyCard.classList.add(
+      "border-2",
+      "solid",
+      "border-gray-300",
+      "rounded-xl",
+      "p-6",
+      "space-y-5"
+    );
+
+    historyCard.innerHTML = `              
+                    <h1 class="text-xl font-semibold">${donNkhAmount} Taka is Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="mb-4 p-2 bg-slate-100 rounded-lg">Time: ${new Date().toLocaleTimeString()}, Date: ${new Date().toLocaleDateString()} </p>
+                `;
+
+    document.getElementById("history-card").appendChild(historyCard);
     popupMassage.classList.remove("hidden");
   });
 
@@ -118,6 +135,7 @@ document
       remainAmount,
       popupMassage,
     } = allInputField();
+
     const inputValue = document.getElementById("donate-feni-amount");
 
     if (innitialMoney <= 0 || innitialMoney < donFniAmount) {
@@ -127,7 +145,7 @@ document
     }
 
     const isNumber = inputValue.value.trim() !== "" && !isNaN(inputValue.value);
-    if (!isNumber) {
+    if (!isNumber || donQutaAmount <= 0) {
       alert("Invalid input");
       inputValue.value = "";
       return;
@@ -135,11 +153,28 @@ document
 
     const amountAfterDonate = innitialMoney - donFniAmount;
     remainAmount.innerText = amountAfterDonate;
-    console.log(remainAmount);
     const newAmount = donateFeni + donFniAmount;
-    console.log(newAmount);
     document.getElementById("donate-feni").innerText = newAmount;
     document.getElementById("donate-feni-amount").value = "";
+
+    // history added
+    const historyCard = document.createElement("div");
+    historyCard.classList.add(
+      "border-2",
+      "solid",
+      "border-gray-300",
+      "rounded-xl",
+      "p-6",
+      "space-y-5"
+    );
+
+    historyCard.innerHTML = `              
+                    <h1 class="text-xl font-semibold">${donFniAmount} Taka is Donate for Flood Relief in Feni, Bangladesh</h1>
+                    <p class="mb-4 p-2 bg-slate-100 rounded-lg">Time: ${new Date().toLocaleTimeString()}, Date: ${new Date().toLocaleDateString()} </p>
+                `;
+
+    document.getElementById("history-card").appendChild(historyCard);
+
     popupMassage.classList.remove("hidden");
   });
 
@@ -167,7 +202,7 @@ document
     }
 
     const isNumber = inputValue.value.trim() !== "" && !isNaN(inputValue.value);
-    if (!isNumber) {
+    if (!isNumber || donQutaAmount <= 0) {
       alert("Invalid input");
       inputValue.value = "";
       return;
@@ -175,12 +210,28 @@ document
 
     const amountAfterDonate = innitialMoney - donQutaAmount;
     remainAmount.innerText = amountAfterDonate;
-    console.log(remainAmount);
     const newAmount = donateQuta + donQutaAmount;
-    console.log(newAmount);
     document.getElementById("donate-quta").innerText = newAmount;
 
     document.getElementById("donate-quta-amount").value = "";
+
+    // history added
+    const historyCard = document.createElement("div");
+    historyCard.classList.add(
+      "border-2",
+      "solid",
+      "border-gray-300",
+      "rounded-xl",
+      "p-6",
+      "space-y-5"
+    );
+
+    historyCard.innerHTML = `              
+                    <h1 class="text-xl font-semibold">${donQutaAmount} Taka is Donate for Injured in the Quota Movement</h1>
+                    <p class="mb-4 p-2 bg-slate-100 rounded-lg">Time: ${new Date().toLocaleTimeString()}, Date: ${new Date().toLocaleDateString()} </p>
+                `;
+
+    document.getElementById("history-card").appendChild(historyCard);
 
     popupMassage.classList.remove("hidden");
   });
