@@ -1,5 +1,5 @@
+// For home button
 document.getElementById("history-btn").addEventListener("click", function () {
-  console.log("hjdgsf");
   getElementsById("history-card").classList.remove("hidden");
   getElementsById("donate-cards").classList.add("hidden");
   document
@@ -28,7 +28,7 @@ document.getElementById("history-btn").addEventListener("click", function () {
     );
 });
 
-// for blog button
+// For blog button
 document.getElementById("blog-btn").addEventListener("click", function () {
   window.location.href = "../Sub-pages/blog.html";
 });
@@ -76,6 +76,7 @@ document
       donateFeni,
       donateQuta,
       remainAmount,
+      popupMassage,
     } = allInputField();
 
     const inputValue = document.getElementById("donate-nowakhali-amount");
@@ -98,6 +99,8 @@ document
     const newAmount = donateNkh + donNkhAmount;
     document.getElementById("donate-nowakhali").innerText = newAmount;
     inputValue.value = "";
+
+    popupMassage.classList.remove("hidden");
   });
 
 // For Feni Donate button
@@ -113,6 +116,7 @@ document
       donateFeni,
       donateQuta,
       remainAmount,
+      popupMassage,
     } = allInputField();
     const inputValue = document.getElementById("donate-feni-amount");
 
@@ -136,6 +140,7 @@ document
     console.log(newAmount);
     document.getElementById("donate-feni").innerText = newAmount;
     document.getElementById("donate-feni-amount").value = "";
+    popupMassage.classList.remove("hidden");
   });
 
 // For quta Donate button
@@ -151,6 +156,7 @@ document
       donateFeni,
       donateQuta,
       remainAmount,
+      popupMassage,
     } = allInputField();
     const inputValue = document.getElementById("donate-quta-amount");
 
@@ -173,5 +179,13 @@ document
     const newAmount = donateQuta + donQutaAmount;
     console.log(newAmount);
     document.getElementById("donate-quta").innerText = newAmount;
-    document.getElementById("ddonate-quta-amount").value = "";
+
+    document.getElementById("donate-quta-amount").value = "";
+
+    popupMassage.classList.remove("hidden");
   });
+
+// For close popup massage
+document.getElementById("close-popup").addEventListener("click", function () {
+  document.getElementById("popup-massage").classList.add("hidden");
+});

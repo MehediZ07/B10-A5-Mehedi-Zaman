@@ -24,6 +24,7 @@ function allInputField() {
   const donateFeni = getElementInnerTextById("donate-feni");
   const donateQuta = getElementInnerTextById("donate-quta");
   const remainAmount = getElementsById("innitial-money");
+  const popupMassage = getElementsById("popup-massage");
   return {
     donNkhAmount,
     donFniAmount,
@@ -34,5 +35,6 @@ function allInputField() {
     donateFeni,
     donateQuta,
     remainAmount,
+    popupMassage,
   };
 }

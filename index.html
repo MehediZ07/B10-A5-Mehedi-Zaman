@@ -25,7 +25,7 @@
     <header class=" mx-auto sticky top-0">
         <div class="bg-[#f6f1e9]  pb-10">
             <div
-                class="max-w-7xl mx-auto flex flex-col space-y-4 md:space-y-0 md:flex-row items-center w-full justify-between p-4">
+                class="max-w-7xl mx-auto flex flex-col space-y-4 md:space-y-0 md:flex-row items-center w-full justify-between py-4">
                 <div>
                     <button id="blog-btn" class="text-black font-semibold bg-[#B4F461] py-2 px-6 rounded-md">
                         <span id="blog">Blog</span>
@@ -55,7 +55,7 @@
     </header>
     <main class="bg-white mx-auto">
         <div class="mb-20">
-            <div id="donate-cards" class="max-w-7xl mx-auto space-y-6">
+            <div id="donate-cards" class="max-w-7xl mx-auto space-y-6 ">
                 <!-- first card  -->
                 <div class="p-6 flex flex-col gap-6 lg:flex-row border-2 solid rounded-xl  border-gray-300">
                     <div>
@@ -130,7 +130,7 @@
                         <div class="space-y-4 flex flex-col justify-end">
                             <input id="donate-feni-amount" type="text" placeholder="Write Donate Amount"
                                 class="input input-bordered w-full" />
-                            <button id="donet-feni-btn"
+                            <button id="donet-feni-btn" onclick="my_modal_5.showModal()"
                                 class="text-black font-semibold w-full bg-[#B4F461] py-3 px-8 rounded-md">
                                 Donate
                             </button>
@@ -181,7 +181,21 @@
 
                     </div>
                 </div>
+                <!-- Confirmation popup massage card -->
+                <div id="popup-massage"
+                    class="bg-transparent w-full h-screen hidden  fixed top-0 flex justify-center items-center left-0 ">
+                    <div
+                        class="max-w-[32rem] bg-white p-4 md:py-6 md:px-24 rounded-xl whitespace-normal text-center space-y-6">
+                        <h class="text-2xl font-bold text-black">Colgratulation!</h>
+                        <img class="mx-auto" src="./assets/coin.png" alt="">
+                        <p>You Have Donated For Humankind</p>
+                        <h1 class="text-xl font-bold text-black">Succesfully</h1>
+                        <button id="close-popup" class="bg-gray-100 rounded-md shadow p-2 text-black">Close
+                            confirmation</button>
+                    </div>
+                </div>
             </div>
+
 
             <div id="history-card" class="hidden max-w-6xl mx-auto  bg-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo corrupti possimus harum eos soluta
@@ -209,10 +223,12 @@
                 ullam perspiciatis, distinctio ex, officiis rerum aperiam. Quam cupiditate eum enim.
             </div>
         </div>
+
     </main>
     <footer id="footer" class="bg-[#f6f1e9] h-32 hidden">
 
     </footer>
+
     <script src="./JS/Utlities.js"></script>
     <script src="./JS/index.js"></script>
     <script src="./JS/blog.js"></script>
